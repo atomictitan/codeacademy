@@ -35,9 +35,9 @@ const printBoard = board => {
     console.log(board.map(row => row.join(' | ')).join('\n'));
 }
 
-let playerBoard = generatePlayerBoard(3, 4);
+let playerBoard = generatePlayerBoard(10, 10);
 console.log('player board made');
-let bombBoard = generateBombBoard(3, 4, 5);
+let bombBoard = generateBombBoard(10, 10, 50);
 
 console.log('Player Board:');
 printBoard(playerBoard);
